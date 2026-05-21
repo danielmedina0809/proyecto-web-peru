@@ -1,0 +1,190 @@
+body{
+    font-family: 'roboto',sans-serif;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #ffffff;
+}
+
+
+/* Aqui configuramos el css del header*/
+
+header{
+    display: flex;
+    min-height: 70px;
+    justify-content: space-between;
+    align-items: center;
+    margin:0;
+    padding:10px;
+
+}
+
+nav a{
+    padding: 20px;
+}
+
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    color: blue;
+}
+
+/* Aqui configuramos el css del main */
+
+
+#parte-abajo{
+    display: flex;
+    min-height: 70px;
+    justify-content: center;
+    align-items: center;
+  
+
+}
+
+
+#idioma{
+    padding-right: 30px;
+}
+
+
+
+@media (max-width:1000px){
+        header{
+        flex-direction: column;
+        font-size: 1.2rem;
+        font-weight: 600;
+    }
+    #idioma{
+        font-size: 1.2rem;
+    }
+
+    nav{
+        padding: 10px 0px;
+    }
+    #parte-abajo{
+        font-weight: 600;
+    }
+
+}
+
+@media (max-width:700px){
+    #parte-abajo{
+        flex-direction: column;
+    }
+}
+
+
+
+
+/* Slideshow */
+
+.container{
+    padding: 2rem;
+}
+
+.slider-wrapper{
+    position: relative;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.slider{
+    display: flex;
+    aspect-ratio: 16 / 9;
+    overflow: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+    border-radius: 0.5rem;
+}
+
+.slider img {
+    flex: 1 0 100%;
+    scroll-snap-align: start;
+    object-fit: cover;
+}
+
+.slider-nav{
+    display: flex;
+    column-gap: 1rem;
+    position: absolute;
+    bottom: 1.25rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.slider-nav a{
+   width: 0.5rem;
+   height: 0.5rem; 
+   border-radius: 50%;
+   background-color: #fff;
+   opacity: 0.75;
+   transition: opacity ease 250ms;
+}
+
+.slider-nav a:hover {
+    opacity: 1;
+}
+
+
+/* dropdown */
+
+
+/* Button 1 */
+
+/* Dropdown Button */
+.dropbtn {
+  background-color: #FFFFFF;
+  color: black;
+  padding: 16px;
+  font-size: 20px;
+  border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  /*position: relative;*/
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #FFFFFF;}
+
+
+.lang-button{
+    background-color: transparent;
+    font-size: 1.25 rem;
+    border: 0;
+    cursor: pointer;
+}
+

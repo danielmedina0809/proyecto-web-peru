@@ -1,0 +1,13 @@
+{
+    "header":{
+        "start":"Start",
+        "archaeological-sites":"Archaeological sites",
+        "research-centers":"Research centers",
+        "contacts":"Contacts"
+    },
+    "otros":{
+        "what-is-archaeology":"What is archaeology",
+        "where-to-learn-archaeology":"Where to learn archaeology",
+        "archaeological-institutes":"Archaeological institutes"
+    }
+}

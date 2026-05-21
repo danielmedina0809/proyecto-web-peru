@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document ArqPeru</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+    
+    <header>
+        <div class="logo">
+            <img src="images/1x/Mesa de trabajo 1.png" alt="Logo Peru" width="200">
+        </div>
+        <nav class="dropdown"> <!--Pendiente de cambiar a div-->
+            <button class="dropbtn" data-section = "header" data-value = "start">Inicio</button>
+            <div class="dropdown-content">
+                <a href="#">¿Quienes somos?</a>
+                <a href="#">¿Que hacemos?</a>
+                <a href="#">Centros de investigación</a>
+            </div>
+        </nav>
+        <nav class="dropdown"> <!--Pendiente de cambiar a div-->
+            <button class="dropbtn" data-section="header" data-value="archaeological-sites">Sitios arqueológicos</button>
+            <div class="dropdown-content">
+                <a href="#">Arqueología en Lima</a>
+                <a href="#">Arqueología en Huaca Pucllana</a>
+                <a href="#">Arqueología en Cusco</a>
+                <a href="#">Arqueología en Chan Chan</a>
+                <a href="#">Arqueología en Cusco</a>
+                <a href="#">Arqueología en Choquequirao</a>
+                <a href="#">Arqueología en Kuelap</a>
+                <a href="#">Otros</a>
+            </div>
+        </nav>
+        <nav class="dropdown"> <!--Pendiente de cambiar a div-->
+            <button class="dropbtn" data-section="header" data-value="research-centers">Centros de investigación</button>
+            <div class="dropdown-content">
+                <a href="#">Centro PUCP</a>
+                <a href="#">Centro UTEC</a>
+                <a href="#">Centro LIAP</a>
+            </div>
+        </nav>
+        <nav class="dropdown"> <!--Pendiente de cambiar a div-->
+            <button class="dropbtn" data-section="header" data-value="contacts">Contactos</button>
+            <div class="dropdown-content">
+                <a href="#">Lima (+51 316 345 3455)</a>
+            </div>
+        </nav>
+
+
+            <!--<a href="#">Inicio</a>
+            <a href="#">Sitios arqueologicos</a> 
+            <a href="#">Centros de investigacion</a>
+            <a href="#">Contactos</a> -->
+            <a href="https://www.google.com" target="_blank"><img src="images/pngwing.com.png" alt="logo-busqueda" width="25" height="25"></a>
+            
+            <div class="languajes">
+                <button class="lang-button" data-language = "es">ES</button>
+                <button class="lang-button" data-language = "en">EN</button>
+            </div>
+
+    </header>
+
+    <section class="container">
+        <div class="slider-wrapper">
+            <div class="slider">
+                <img id = "slide-1"src="images\imagen_1.png" alt="imagen-peru">
+                <img id = "slide-2"src="images\imagen_2.png" alt="imagen-peru">
+                <img id = "slide-3"src="images\imagen_3.png" alt="imagen-peru">
+            </div>
+            <div class= "slider-nav">
+                <a href="#slide-1"></a>
+                <a href="#slide-2"></a>
+                <a href="#slide-3"></a>
+            </div>
+        </div>
+    </section>
+
+     <!--
+    <div id="imagen">
+        <img src="images/fondo.png" alt="paisaje-de-peru" width="100%">
+    </div>
+     -->   
+    
+
+    <nav id="parte-abajo">
+        <a href="#" data-section="otros" data-value="what-is-archaeology">Que es arqueologia</a>
+        <a href="#" data-section="otros" data-value="where-to-learn-archaeology">Donde aprender arqueologia</a>
+        <a href="#" data-section="otros" data-value="archaeological-institutes">Institutos de arqueologia</a>       
+    </nav>
+
+    <!--<div class="dropdown">
+        <button class="dropbtn"> Dropdown</button>
+        <div class="dropdown-content">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+        </div>
+    </div> -->
+
+    
+     
+    <script src="js/script.js"></script>
+</body>
+</html>
